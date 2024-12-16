@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="StudentConnect - Group Chat platform for students to communicate and collaborate in groups.">
+    <title>StudentConnect - Academic Networking</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <h1>StudentConnect</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="groups.html">Groups</a>
+        </nav>
+    </header>
+
+    
+    <section class="welcome">
+        <h2>Welcome to StudentConnect</h2>
+        <p>Connect with peers, discuss coursework, and collaborate on projects.</p>
+    </section>
+
+    <!-- Popular Groups -->
+   <!-- Group List Section -->
+    <section class="homepage-groups">
+        <h2>Popular Groups</h2>
+        <div class="group-list" id="homepage-group-list">
+            <!-- Group list items will be dynamically generated here , using js-->
+        </div>
+    </section>
+<!-- Login and Register Forms Section -->
+<section class="auth-forms">
+    <!-- Login Form -->
+    <div id="login-form-container" class="form-container hidden">
+        <h3>Login</h3>
+        <form id="login-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Register Form -->
+    <div id="register-form-container" class="form-container hidden">
+        <h3>Register</h3>
+        <form id="register-form">
+            <label for="reg-username">Username</label>
+            <input type="text" id="reg-username" name="username" required>
+            
+            <label for="reg-password">Password</label>
+            <input type="password" id="reg-password" name="password" required>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</section>
+<script src="index.js"></script>
+</body>
+</html>

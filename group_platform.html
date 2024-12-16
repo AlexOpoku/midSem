@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Group Platform on StudentConnect for students to collaborate and share files in groups.">
+    <title>Group Platform - StudentConnect</title>
+    <link rel="stylesheet" href="group_platform.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <h1>Group Platform - <span id="group-name"></span></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="groups.html">Groups</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <section class="main-container">
+        <!-- Group Information Section -->
+        <section class="group-info">
+            <h2>About This Group</h2>
+            <p id="group-description">Group description will appear here...</p>
+
+            <!-- Display member count here -->
+            <div id="member-count"></div>
+        </section>
+
+        <!-- File Sharing Section -->
+        <section class="file-sharing">
+            <h2>Share Files</h2>
+            <input type="file" id="file-input" />
+            <button id="upload-btn">Upload File</button>
+            <div class="file-list" id="file-list">
+                <h3>Shared Files</h3>
+                <!-- List of shared files will appear here -->
+            </div>
+        </section>
+
+        <!-- Members List Section -->
+        <section class="members-list">
+            <h2>Group Members</h2>
+            <ul id="members-list">
+                <!-- List of members will be generated here -->
+            </ul>
+        </section>
+
+        <!-- Chat / Discussion Area -->
+        <section class="discussion-area">
+            <h2>Group Chat</h2>
+            <div class="messages-area" id="messages-area">
+                <!-- Messages will be dynamically generated here -->
+            </div>
+            <div class="message-input">
+                <input type="text" id="message-input" placeholder="Type a message..." required>
+                <button id="send-btn">Send</button>
+            </div>
+        </section>
+
+        <!-- Announcements Section -->
+        <section class="announcements">
+            <h2>Announcements</h2>
+            <div id="announcement-list">
+                <!-- List of announcements will appear here -->
+            </div>
+            <div class="announcement-input">
+                <textarea id="announcement-input" placeholder="Post an announcement..."></textarea>
+                <button id="post-announcement-btn">Post Announcement</button>
+            </div>
+        </section>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="group_platform.js"></script>
+</body>
+</html>

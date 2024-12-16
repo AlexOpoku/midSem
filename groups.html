@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentConnect - Group Chat platform for students to communicate and collaborate in groups.">
+    <title>StudentConnect - Groups</title>
+    <link rel="stylesheet" href="css/groups.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="path-to-your-favicon.ico">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <h1>StudentConnect</h1>
+        <nav>
+            <a href="index.html" aria-label="Go to Home">Home</a>
+            <a href="profile.html" aria-label="View your Profile">Profile</a>
+            <a href="groups.html" aria-label="Explore Groups">Groups</a>
+            <a href="index.html" id="logout" aria-label="Logout">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Groups Section -->
+    <section class="groups-page">
+        <h2>Explore Groups</h2>
+        <div class="group-list" id="group-list">
+            <p id="loading-groups">Loading groups...</p>
+        </div>
+    </section>
+
+    <!-- Joined Groups Section -->
+    <section class="joined-groups">
+        <h2>Joined Groups</h2>
+        <div class="joined-group-list" id="joined-group-list">
+            <p>You haven't joined any groups yet.</p>
+        </div>
+    </section>
+
+    <script src="groups.js"></script>
+</body>
+</html>

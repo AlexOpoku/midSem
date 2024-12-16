@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #001946;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.groups-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.groups-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.group-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.groups-page, .joined-groups {
+    padding: 20px;
+    text-align: center;
+}
+
+.group-list, .joined-group-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.group-item {
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.group-item:hover {
+    transform: scale(1.05);
+}
+
+/* Available Groups List */
+.group-item {
+    background-color: #f1f3f5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    transition: background-color 0.3s;
+}
+
+.group-item:hover {
+    background-color: #e0e5ec;
+}
+
+.group-item button {
+    padding: 8px 12px;
+    background-color: #001946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 5px;
+}
+
+.group-item button:hover {
+    background-color: #00287a;
+    transform: scale(1.05);
+}
+
+.group-item button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+
+/* Joined Groups List */
+#joined-group-list {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #f3d9d9;
+}
+
+#joined-group-list .group-item {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Options Button Styling */
+.options-btn {
+    padding: 8px 12px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 35px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .group-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.leave-btn {
+    padding: 8px 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 130px;
+    transition: background-color 0.3s, transform 0.2s;
+}

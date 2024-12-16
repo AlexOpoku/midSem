@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="StudentConnect - Group Chat platform for students to communicate and collaborate in groups.">
+    <title>StudentConnect - Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <h1>StudentConnect</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="groups.html">Groups</a>
+            <button id="logout-btn">Logout</button>
+        </nav>
+    </header>
+
+    <!-- Profile Display Section -->
+    <section class="profile">
+        <h2>Welcome, <span id="profile-username"></span>!</h2>
+        <div class="profile-info">
+            <img src="default-pic.jpg" alt="Profile Picture" class="profile-pic" id="profile-pic">
+            <p><strong>Bio:</strong> <span id="profile-bio">Not set</span></p>
+            <p><strong>Area of Study:</strong> <span id="profile-area">Not set</span></p>
+        </div>
+    </section>
+
+    <!-- Profile Edit Form -->
+    <section class="profile-edit">
+        <h3>Edit Profile</h3>
+        <form id="profile-form">
+            <label for="bio">Bio</label>
+            <textarea id="bio" placeholder="Tell us about yourself"></textarea>
+            
+            <label for="area">Area of Study</label>
+            <input type="text" id="area" placeholder="E.g., Computer Science">
+
+            <label for="profile-pic-upload">Profile Picture</label>
+            <input type="file" id="profile-pic-upload" accept="image/*">
+            
+            <button type="submit">Save Profile</button>
+        </form>
+    </section>
+
+    <script src="profile.js"></script>
+</body>
+</html>
